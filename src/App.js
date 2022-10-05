@@ -1,24 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-import { Home } from './pages/Home';
 import React from 'react';
-import {
-  RecoilRoot,
-  atom,
-  selector,
-  useRecoilState,
-  useRecoilValue,
-} from 'recoil';
-import { CharacterCount } from './components/CharacterCount';
+import { RecoilRoot } from 'recoil';
+import TodoList from './components/TodoList';
+
 function App() {
-  return (
-    <div className="App">
-      <RecoilRoot>
-        <Home />
-        <CharacterCount />
-      </RecoilRoot>
-    </div>
-  );
+    return (
+        <RecoilRoot>
+            <TodoList />
+        </RecoilRoot>
+    );
 }
 
 export default App;
